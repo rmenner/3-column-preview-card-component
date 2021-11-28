@@ -46,9 +46,10 @@ body {
 
 .heading {
     color: var(--gray);
-    font-size: 35px;
+    font-size: 40px;
     text-transform: uppercase;
     font-family: var(--cursive);
+    margin-bottom: 10px;
 }
 
 .copy {
@@ -102,7 +103,7 @@ body {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        height: calc(100vh - 20px);
+        height: 100vh;
         margin: 0px auto;
         align-items: center;
     }
