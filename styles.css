@@ -103,7 +103,7 @@ body {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        height: 100vh;
+        height: calc(100vh - 20px);
         margin: 0px auto;
         align-items: center;
     }
