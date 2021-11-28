@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions...](https://www.frontendmentor.io/solutions/responsive-3-column-card-layout-using-flexbox-UUSd1Q5Rz)
 - Live Site URL: [https://rmenner.github.io/...](https://rmenner.github.io/3-column-preview-card-component/)
 
 ## My process
