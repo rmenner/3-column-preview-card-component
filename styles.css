@@ -1,40 +1,16 @@
-/* Colors */
+:root {
 
-.orange {
-    color: hsl(31, 77%, 52%);  
-} 
+    /* Colors */
+    --orange: hsl(31, 77%, 52%);  
+    --cyan: hsl(184, 100%, 22%);
+    --dark-cyan: hsl(179, 100%, 13%);
+    --white: hsla(0, 0%, 100%, 0.75); /* paragraphs */
+    --gray: hsla(0, 0%, 95%); /* background, headings, buttons */
 
-.cyan {
-    color:hsl(184, 100%, 22%);
-}
+    /* Typography */
+    --cursive: 'Big Shoulders Display', cursive;
+    --sans-serif: 'Lexend Deca', sans-serif;
 
-.dark-cyan {
-    color: hsl(179, 100%, 13%);
-}
-
-.white {
-    color: hsla(0, 0%, 100%, 0.75);
-    /* paragraphs */
-}
-
-.gray {
-    color: hhsl(0, 0%, 95%);
-    /* background, headings, buttons */
-}
-
-/* Typography */
-
-.copy {
-    font-size: 15px;
-    /* body copy */
-}
-
-.cursive {
-    font-family: 'Big Shoulders Display', cursive;
-}
-
-.sans-serif {
-    font-family: 'Lexend Deca', sans-serif;
 }
 
 /* Frontend Mentor */
@@ -50,6 +26,110 @@
 
 /* Chalenge Styles */
 
-.column-container {
-    border-radius: 5px;
+body {
+    font-size: 15px;
+    background-color: var(--gray);
+    margin: 0 20px;
+    padding-bottom: 5px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.columns-inner {
+    margin: 30px auto;
+}
+
+.card {
+    padding: 3em;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.heading {
+    color: var(--gray);
+    font-size: 35px;
+    text-transform: uppercase;
+    font-family: var(--cursive);
+}
+
+.copy {
+    color: var(--white);
+    line-height: 1.5em;
+}
+
+.orange .button {
+    color: var(--orange)
+}
+
+.cyan .button {
+    color: var(--cyan)
+}
+
+.dark-cyan .button {
+    color: var(--dark-cyan)
+}
+
+.button {
+    margin-top: 35px;
+    border-radius: 100px;
+    background-color: var(--gray);
+    border: 2px solid var(--gray);
+    text-decoration: none;
+    padding: 10px 30px;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: var(--gray);
+}
+
+.orange{
+    background-color: var(--orange);
+    border-radius: 10px 10px 0 0;
+}
+.cyan{
+    background-color: var(--cyan);
+
+}
+.dark-cyan{
+    background-color: var(--dark-cyan);
+    border-radius: 0 0 10px 10px;
+}
+
+@media screen and (min-width: 900px) {
+    
+    .columns-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: calc(100vh - 20px);
+        margin: 0px auto;
+        align-items: center;
+    }
+
+    .columns-inner {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        flex-grow: 1;
+    }
+
+    .orange {
+        border-radius: 10px 0 0 10px;
+    }
+    .dark-cyan {
+        border-radius: 0 10px 10px 0;
+    }
+
+    .button {
+        margin-top: 65px;
+    }
+
 }
