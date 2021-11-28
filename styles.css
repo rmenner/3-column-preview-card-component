@@ -1,3 +1,44 @@
+/* Colors */
+
+.orange {
+    color: hsl(31, 77%, 52%);  
+} 
+
+.cyan {
+    color:hsl(184, 100%, 22%);
+}
+
+.dark-cyan {
+    color: hsl(179, 100%, 13%);
+}
+
+.white {
+    color: hsla(0, 0%, 100%, 0.75);
+    /* paragraphs */
+}
+
+.gray {
+    color: hhsl(0, 0%, 95%);
+    /* background, headings, buttons */
+}
+
+/* Typography */
+
+.copy {
+    font-size: 15px;
+    /* body copy */
+}
+
+.cursive {
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.sans-serif {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+/* Frontend Mentor */
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -7,3 +48,8 @@
     color: hsl(228, 45%, 44%);
 }
 
+/* Chalenge Styles */
+
+.column-container {
+    border-radius: 5px;
+}
